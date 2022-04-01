@@ -1,0 +1,21 @@
+<% layout('layouts/boilerplate1')%>
+<div class="row mb-4">
+    <div class="col-6 offset-3">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">This route will be active on 23rd'Jan 12pm.</h4>
+            <div id="lottie"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
+<script>
+   
+    var animation = bodymovin.loadAnimation({
+      container: document.querySelector('#lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "https://assets1.lottiefiles.com/packages/lf20_nucheY.json"
+    })
+</script>
